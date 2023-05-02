@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "isitoff"
+version = "0.0.1"
+authors = [
+  { name="Manni Moghimi", email="mannimoghimi@gmail.com" },
+]
+description = "A package for event and holiday identification in the Persian calendar."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Manni-MinM/isitoff"
+"Bug Tracker" = "https://github.com/Manni-MinM/isitoff/issues"
