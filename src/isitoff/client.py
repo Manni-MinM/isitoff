@@ -5,6 +5,7 @@ from requests.adapters import HTTPAdapter, Retry
 
 from urllib.parse import urljoin
 
+
 DEFAULT_MAX_RETRIES=Retry(
     total=5,
     backoff_factor=1,
