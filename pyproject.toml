@@ -2,9 +2,15 @@
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
+[tool.hatchlings]
+sdist = true
+wheel = true
+requirements = ["requirements.txt"]
+scripts = ["bin/myscript.py"]
+
 [project]
 name = "isitoff"
-version = "0.0.1"
+version = "0.1.0"
 authors = [
   { name="Manni Moghimi", email="mannimoghimi@gmail.com" },
 ]
@@ -15,6 +21,11 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+]
+dependencies = [
+  "dotmap>=1.3.30",
+  "requests>=2.29.0",
+  "jdatetime>=4.1.1",
 ]
 
 [project.urls]
